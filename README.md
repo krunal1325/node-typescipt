@@ -19,3 +19,10 @@
 
 ### For the production value is true. because rds required SSL for connection.
 - DB_SSL='false'
+
+### issue that i got.
+- When i have to create migration i directly create it into the migrations folder.
+- I always run it in to the production build. that i store into dist folder.
+- I run the migration with the below command.
+
+npm run db:migration

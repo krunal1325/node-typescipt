@@ -7,7 +7,7 @@
     "start": "npm run build && nodemon dist/app.js",
     "dev": "nodemon ./app.ts",
     "build": "tsc",
-    "db:migration": "tsc && sequelize db:migrate",
+    "db:migration": "npm run build && sequelize db:migrate",
     "migration:run": "sequelize-cli db:migrate",
     "migration:undo": "sequelize-cli db:migrate:undo",
     "migration:undo:all": "sequelize-cli db:migrate:undo:all",
