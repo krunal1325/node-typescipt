@@ -21,4 +21,4 @@ if(process.env.DB_SSL === 'true') {
   }
 }
 
-export default config;
+module.exports = config;
